@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --blue: #383e56;
+    --white: #eedad1;
+    --orange: #f69e7b;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--blue);
+    height: calc(100vh - 2em);
+    color: var(--white);
+}
+
+
+/* ------------
+    Navbar
+------------ */
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hamburger {
+    width: 30px;
+    height: 30px;
+    margin: 1.5em;
+}
+
+.cross {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 2.5%;
+    right: 5%;
+}
+
+.nav-element {
+    display: none;
+}
+
+.logo {
+    margin-left: 1em;
+    font-size: 1.5rem;
+}
+
+.nav-modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 200px;
+    height: 100vh;
+    background-color: var(--orange);
+    color: var(--blue);
+    width: 0;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    height: 100vh;
+    overflow-x: hidden;
+    visibility: hidden;
+    transition: all 250ms ease-in-out;
+}
+
+.nav-modal ul {
+    list-style-type: none;
+    font-weight: 700;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.nav-list-item {
+    list-style-type: none;
+    padding: 0.5em;
+    margin: 0;
+    transition: 100ms;
+    font-weight: 700;
+    margin-left: -1.5em;
+    font-size: 2rem;
+    margin-bottom: 1em;
+}
+
+
+.active-nav {
+    visibility: visible;
+    width: 100%;
+}
+
+
+/* ------------
+    Hero
+------------ */
+
+.hero-section {
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero-section h1 {
+    font-size: 4.5rem;
+    margin-left: .25em;
+    line-height: 70px;
+}
+
+.hero-section a {
+    background-color: var(--orange);
+    color: var(--blue);
+    text-decoration: none;
+    font-weight: 700;
+    padding: .5em 1.5em;
+    margin-left: 1.5em;
+    width: 8em;
+    text-align: center;
+    margin-top: -2em;
+}
