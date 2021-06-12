@@ -8,7 +8,7 @@
 </head>
 <body>
     <nav class="nav-modal" id="navModal">
-        <img src="./cross.png" alt="" class="cross" id="cross">
+        <img src="./icons/cross.png" alt="" class="cross" id="cross">
         <ul>
             <li class="nav-list-item">Projects</li>
             <li class="nav-list-item">About</li>
@@ -20,18 +20,64 @@
             <h3 class="logo">Artúr Friedrich</h3>
         </div>
         <div class="nav">
-            <img src="./menu.png" alt="" class="hamburger" id="hamburger">
+            <img src="./icons/menu.png" alt="" class="hamburger" id="hamburger">
             <h3 class="nav-element"><a href="#">Projects</a></h3>
             <h3 class="nav-element"><a href="#">About</a></h3>
             <h3 class="nav-element contact-btn"><a href="#">Contact</a></h3>
         </div>
     </header>
     <main>
+
         <section class="hero-section">
             <h1>Hello.<br>I am Artúr</h1>
-            <a href="#">About me</a>
+            <a href="#" class="accent-btn">About me</a>
         </section>
+
+        <section class="about-me">
+            <h3 class="section-title">I am Artúr Friedrich</h3>
+            <p>20 years old, Computer Science student, 
+                from Sopron, Hungary. I started learning 
+                Front End Development in February of 2021, 
+                and I want to be better.</p>
+            <img src="./images/me1.jpg" alt="picure of me smiling">
+            <a href="#" class="accent-btn">Read more</a>
+        </section>
+
+        <section class="work-cards">
+            <section class="work">
+                <h3 class="section-title">My selected work</h3>
+                <div class="project-card">
+                    <img src="./images/filling.jpg" alt="" class="project-card--img">
+                    <h5 class="project-card--title">Project name</h5>
+                    <a href="#" class="project-card--btn">Check out</a>
+                </div>
+            </section>
+
+            <section class="work">
+                <div class="project-card">
+                    <img src="./images/filling.jpg" alt="" class="project-card--img">
+                    <h5 class="project-card--title">Project name</h5>
+                    <a href="#" class="project-card--btn">Check out</a>
+                </div>
+            </section>
+            <a href="#" class="accent-btn work-cards-btn">Show more</a>
+        </section>
+
+        <section class="contact">
+            <h3 class="section-title">Contact me</h3>
+            <div class="input-fields">
+                <input type="text" class="contact-input" placeholder="Name">
+                <input type="text" class="contact-input" placeholder="Email">
+                <textarea name="message" id="" cols="30" rows="10" placeholder="Message"></textarea>
+            </div>
+            <button type="submit" class="accent-btn">Send</button>
+        </section>
+
     </main>
+
+    <footer>
+        <p>Artúr Friedrich 2021</p>
+    </footer>
     <script src="./index.js"></script>
 </body>
 </html>

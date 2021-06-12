@@ -8,6 +8,7 @@
     --blue: #383e56;
     --white: #eedad1;
     --orange: #f69e7b;
+    --pink: #d4b5b0;
 }
 
 body {
@@ -92,7 +93,6 @@ header {
     margin-bottom: 1em;
 }
 
-
 .active-nav {
     visibility: visible;
     width: 100%;
@@ -116,7 +116,7 @@ header {
     line-height: 70px;
 }
 
-.hero-section a {
+.accent-btn {
     background-color: var(--orange);
     color: var(--blue);
     text-decoration: none;
@@ -126,4 +126,140 @@ header {
     width: 8em;
     text-align: center;
     margin-top: -2em;
+    border-radius: 5px;
+}
+
+
+
+.about-me {
+    text-align: center;
+}
+
+.section-title {
+    font-size: 2.25rem;
+    margin-bottom: 0;
+}
+
+.about-me p {
+    font-size: 1rem;
+    max-width: 70%;
+    margin: 1em auto;
+    text-align: left;
+    line-height: 24px;
+}
+
+.about-me img {
+    width: 70%;
+    display: block;
+    margin: 1.5em auto 2em;
+    border-radius: 5px;
+}
+
+.about-me .accent-btn {
+    margin-left: 0;
+}
+
+
+
+.work-cards {
+    text-align: center;
+}
+
+.work {
+    text-align: center;
+}
+
+.project-card {
+    background-color: var(--orange);
+    border-radius: 5px;
+    max-width: 65%;
+    margin: 1.5em auto;
+    padding-bottom: .5em;
+}
+
+.work .section-title {
+    margin-top: 3em;
+}
+
+.project-card--img {
+    max-width: 90%;
+    margin: 1em;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.project-card--title {
+    font-size: 1.5rem;
+    color: var(--blue);
+    margin: 0;
+}
+
+.project-card--btn {
+    background-color: var(--blue);
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 700;
+    padding: .5em 1.5em;
+    width: 8em;
+    text-align: center;
+    border-radius: 5px;
+    display: block;
+    margin: 1em auto;
+}
+
+.work-cards-btn {
+    margin: 0 auto;
+}
+
+
+
+.contact {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contact .section-title {
+    margin: 3em 0 1em 0;
+}
+
+.contact-input,
+.input-fields textarea {
+    display: block;
+    border: none;
+    border-radius: 5px;
+    margin: 1em auto;
+    padding: .5em 1.5em;
+    background-color: var(--pink);
+    font-family: inherit;
+    color: var(--blue);
+    font-weight: 700;
+    width: 50%;
+    outline: none;
+}
+
+.contact button {
+    border: none;
+    margin: 0;
+    font-family: inherit;
+    font-weight: 700;
+    font-size: inherit;
+    margin-top: 1em;
+}
+
+
+
+footer {
+    background-color: var(--pink);
+    height: 5em;
+    margin-top: 3em;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--blue);
+}
+
+footer p {
+    opacity: .5;
+    font-weight: 700;
 }
