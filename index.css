@@ -95,6 +95,11 @@ header {
     margin-bottom: 1em;
 }
 
+.nav-list-item a {
+    text-decoration: none;
+    color: inherit;
+}
+
 .active-nav {
     visibility: visible;
     width: 100%;
@@ -254,7 +259,7 @@ header {
     width: 60%;
 }
 
-.contact button {
+.contact .accent-btn {
     border: none;
     margin: 0;
     font-family: inherit;

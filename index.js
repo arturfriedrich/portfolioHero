@@ -20,3 +20,10 @@ function close(event) {
         // contentContainer.classList.remove("inactive-container")
     }
 }
+
+
+const navLinks = document.querySelectorAll(".nav-list-item-a")
+
+for (let link of navLinks) {
+    link.addEventListener("click", toggle)
+}

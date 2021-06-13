@@ -10,9 +10,9 @@
     <nav class="nav-modal" id="navModal">
         <img src="./icons/cross.png" alt="" class="cross" id="cross">
         <ul>
-            <li class="nav-list-item">Projects</li>
-            <li class="nav-list-item">About</li>
-            <li class="nav-list-item">Contact</li>
+            <li class="nav-list-item"><a href="#aboutSection" class="nav-list-item-a">About</a></li>
+            <li class="nav-list-item"><a href="#worksSection" class="nav-list-item-a">Projects</a></li>
+            <li class="nav-list-item"><a href="#contactSection" class="nav-list-item-a">Contact</a></li>
         </ul>
     </nav>
     <header class="nav">
@@ -36,7 +36,7 @@
             <img src="./images/filling.jpg" alt="">
         </section>
 
-        <section class="about-me">
+        <section class="about-me" id="aboutSection">
             <h3 class="section-title">I am Artúr Friedrich</h3>
             <p>20 years old, Computer Science student, 
                 from Sopron, Hungary. I started learning 
@@ -46,7 +46,7 @@
             <a href="#" class="accent-btn">Read more</a>
         </section>
 
-        <section class="work-cards">
+        <section class="work-cards" id="worksSection">
             <section class="work">
                 <h3 class="section-title">My selected work</h3>
                 <div class="project-card">
@@ -66,14 +66,14 @@
             <a href="#" class="accent-btn work-cards-btn">Show more</a>
         </section>
 
-        <section class="contact">
+        <section class="contact" id="contactSection">
             <h3 class="section-title">Contact me</h3>
-            <div class="input-fields">
-                <input type="text" class="contact-input" placeholder="Name">
-                <input type="text" class="contact-input" placeholder="Email">
-                <textarea name="message" id="" cols="30" rows="10" placeholder="Message"></textarea>
-            </div>
-            <button type="submit" class="accent-btn">Send</button>
+            <form action="mailto:artur.friedrich.harka@gmail.com" method="post" enctype="text/plain" class="input-fields">
+                <input type="text" name="name" class="contact-input" placeholder="Name" required>
+                <input type="email" name="email" class="contact-input" placeholder="Email" required>
+                <textarea name="message" id="" cols="30" rows="10" placeholder="Message" required></textarea>
+                <input type="submit" name="submit" value="Send" class="accent-btn">
+            </form>
         </section>
 
     </main>
