@@ -132,7 +132,7 @@ header {
 }
 
 .hero-section img {
-    width: 60%;
+    width: 60vw;
     object-fit: cover;
     margin: 0 auto;
 }
