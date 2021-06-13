@@ -27,6 +27,8 @@ body {
 header {
     display: flex;
     justify-content: space-between;
+    width: 100%;
+    position: fixed;
 }
 
 .hamburger {
@@ -104,16 +106,16 @@ header {
 ------------ */
 
 .hero-section {
-    height: 90vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .hero-section h1 {
     font-size: 4.5rem;
     margin-left: .25em;
-    margin-top: 3em;
+    margin-top: -.5em;
     margin-bottom: .5em;
     line-height: 70px;
 }
@@ -137,8 +139,11 @@ header {
 
 
 
+
 .about-me {
     text-align: center;
+    border: 2px solid transparent;
+    height: 80vh;
 }
 
 .section-title {
@@ -164,6 +169,7 @@ header {
 .about-me .accent-btn {
     margin-left: 0;
 }
+
 
 
 
@@ -219,9 +225,13 @@ header {
 
 
 
+
+
 .contact {
     margin: 0 auto;
     text-align: center;
+    border: 2px solid transparent;
+    height: 70vh;
 }
 
 .contact .section-title {
