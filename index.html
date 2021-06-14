@@ -69,11 +69,11 @@
 
         <section class="contact" id="contactSection">
             <h3 class="section-title">Contact me</h3>
-            <form action="mailto:artur.friedrich.harka@gmail.com" method="post" enctype="text/plain" class="input-fields">
-                <input type="text" name="name" class="contact-input" placeholder="Name" required>
-                <input type="email" name="email" class="contact-input" placeholder="Email" required>
-                <textarea name="message" id="" cols="30" rows="10" placeholder="Message" required></textarea>
-                <input type="submit" name="submit" value="Send" class="accent-btn">
+            <form method="post"class="input-fields">
+                <input type="text" name="name" class="contact-input name" placeholder="Name" required>
+                <input type="email" name="email" class="contact-input email" placeholder="Email" required>
+                <textarea class="message" name="message" id="" cols="30" rows="10" placeholder="Message" required></textarea>
+                <button type="submit" class="accent-btn">Send</button>
             </form>
         </section>
 
@@ -82,6 +82,7 @@
     <footer>
         <p>Artúr Friedrich 2021</p>
     </footer>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="./index.js"></script>
 </body>
 </html>
