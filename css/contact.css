@@ -14,9 +14,10 @@
 body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
-    background-color: var(--blue);
+    background-color: var(--pink);
     height: calc(100vh - 2em);
-    color: var(--white);
+    color: var(--blue);
+    font-weight: 700;
 }
 
 
@@ -111,28 +112,46 @@ header {
 }
 
 
-/* ------------
-    Hero
------------- */
 
-.hero-section {
-    height: 100vh;
+.contact {
+    margin: 0 auto;
+    text-align: center;
+    border: 2px solid transparent;
+    height: calc(100vh - 8em);
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.hero-section h1 {
-    font-size: 4.5rem;
-    margin-left: .25em;
-    margin-top: -.5em;
-    margin-bottom: .5em;
-    line-height: 70px;
+.contact .section-title {
+    font-size: 2rem;
+    margin-bottom: 1em;
+    margin-top: 3.5em;
+}
+
+.contact-input,
+.input-fields textarea {
+    display: block;
+    border: none;
+    border-radius: 5px;
+    margin: 1em auto;
+    padding: .75em 1.5em;
+    background-color: var(--blue);
+    font-family: inherit;
+    color: var(--blue);
+    font-weight: 700;
+    width: 50%;
+    outline: none;
+    width: 60%;
+}
+
+.input-fields textarea {
+    color: white;
 }
 
 .accent-btn {
-    background-color: var(--orange);
-    color: var(--blue);
+    background-color: var(--blue);
+    color: var(--orange);
     text-decoration: none;
     font-weight: 700;
     padding: .5em 1.5em;
@@ -143,128 +162,7 @@ header {
     border-radius: 5px;
 }
 
-.hero-section img {
-    display: none;
-}
-
-
-
-
-.about-me {
-    text-align: center;
-    border: 2px solid transparent;
-    height: 80vh;
-}
-
-.section-title {
-    font-size: 2.25rem;
-    margin-bottom: 0;
-}
-
-.about-me p {
-    font-size: 1rem;
-    max-width: 70%;
-    margin: 1em auto;
-    text-align: left;
-    line-height: 24px;
-}
-
-.about-me img {
-    width: 70%;
-    display: block;
-    margin: 1.5em auto 2em;
-    border-radius: 5px;
-}
-
-.about-me .accent-btn {
-    margin-left: 0;
-}
-
-
-
-
-.work-cards {
-    text-align: center;
-}
-
-.work {
-    text-align: center;
-}
-
-.project-card {
-    background-color: var(--orange);
-    border-radius: 5px;
-    max-width: 65%;
-    margin: 1.5em auto;
-    padding-bottom: .5em;
-}
-
-.work .section-title {
-    margin-top: 3em;
-}
-
-.project-card--img {
-    max-width: 90%;
-    margin: 1em;
-    border-radius: 5px;
-    object-fit: cover;
-}
-
-.project-card--title {
-    font-size: 1.5rem;
-    color: var(--blue);
-    margin: 0;
-}
-
-.project-card--btn {
-    background-color: var(--blue);
-    color: var(--white);
-    text-decoration: none;
-    font-weight: 700;
-    padding: .5em 1.5em;
-    width: 8em;
-    text-align: center;
-    border-radius: 5px;
-    display: block;
-    margin: 1em auto;
-}
-
-.work-cards-btn {
-    margin: 0 auto;
-}
-
-
-
-
-
-.contact {
-    margin: 0 auto;
-    text-align: center;
-    border: 2px solid transparent;
-    height: 70vh;
-}
-
-.contact .section-title {
-    margin: 3em 0 1em 0;
-}
-
-.contact-input,
-.input-fields textarea {
-    display: block;
-    border: none;
-    border-radius: 5px;
-    margin: 1em auto;
-    padding: .75em 1.5em;
-    background-color: var(--pink);
-    font-family: inherit;
-    color: var(--blue);
-    font-weight: 700;
-    width: 50%;
-    outline: none;
-    width: 60%;
-}
-
-.contact .accent-btn {
+.accent-btn {
     border: none;
     margin: 0;
     font-family: inherit;
@@ -275,15 +173,16 @@ header {
 
 
 
+
 footer {
-    background-color: var(--pink);
+    background-color: var(--blue);
     height: 5em;
     margin-top: 3em;
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: var(--blue);
+    color: var(--pink);
 }
 
 footer p {
