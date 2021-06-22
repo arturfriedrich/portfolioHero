@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Artúr Friedrich</title>
@@ -37,7 +38,7 @@
             <img src="./images/filling.jpg" alt="">
         </section>
 
-        <section class="about-me" id="aboutSection">
+        <section data-aos="fade-left" class="about-me" id="aboutSection">
             <h3 class="section-title" id="aboutTitle">I am Artúr Friedrich</h3>
             <p>20 years old, Computer Science student, 
                 from Sopron, Hungary. I started learning 
@@ -47,7 +48,7 @@
             <a href="./about.html" class="accent-btn">Read more</a>
         </section>
 
-        <section class="work-cards" id="worksSection">
+        <section data-aos="fade-right" class="work-cards" id="worksSection">
             <section class="work">
                 <h3 class="section-title">My selected work</h3>
                 <div class="project-card">
@@ -57,7 +58,7 @@
                 </div>
             </section>
 
-            <section class="work">
+            <section data-aos="fade-left" class="work">
                 <div class="project-card">
                     <img src="./images/filling.jpg" alt="" class="project-card--img">
                     <h5 class="project-card--title">Project name</h5>
@@ -67,7 +68,7 @@
             <a href="#" class="accent-btn work-cards-btn">Show more</a>
         </section>
 
-        <section class="contact" id="contactSection">
+        <section data-aos="fade-right" class="contact" id="contactSection">
             <h3 class="section-title">Contact me</h3>
             <form method="post"class="input-fields">
                 <input type="text" name="name" class="contact-input name" placeholder="Name" required>
@@ -80,8 +81,18 @@
     </main>
 
     <footer>
+        <div class="icons">
+            <a href="https://www.linkedin.com/in/friedrich-art%C3%BAr-6840201a1/" target="_blank"><img src="./icons/linkedin.png" alt=""></a>
+            <a href="https://github.com/arturfriedrich" target="_blank"><img src="./icons/github.png" alt=""></a>
+            <a href="https://twitter.com/arthurfriedri_" target="_blank"><img src="./icons/twitter.png" alt=""></a>
+            <a href="mailto:artur.friedrich.harka@gmail.com" target="_blank"><img src="./icons/email.png" alt=""></a>
+        </div>
         <p>Artúr Friedrich 2021</p>
     </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>  
     <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="./index.js"></script>
 </body>

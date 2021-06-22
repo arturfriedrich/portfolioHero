@@ -155,16 +155,24 @@ header {
 
 footer {
     background-color: var(--blue);
-    height: 5em;
+    height: 6em;
     margin-top: 3em;
     text-align: center;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     color: var(--pink);
 }
 
 footer p {
-    opacity: .5;
+    opacity: .8;
     font-weight: 700;
+    font-size: .625rem;
+}
+
+footer img {
+    opacity: .8;
+    width: 20px;
+    margin: .25em;
 }
