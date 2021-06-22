@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="./css/about-me.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Artúr Friedrich</title>
@@ -28,13 +29,13 @@
     </header>
     <main>
         <section class="about-me">
-            <h3 class="section-title">Hello, nice to meet you...</h3>
-            <p>My name is Artúr Friedrich, I started learning 
+            <h3 data-aos="fade-left" class="section-title">Hello, nice to meet you...</h3>
+            <p data-aos="fade-left">My name is Artúr Friedrich, I started learning 
                 Front End Development in February of 2021. 
                 I am currently a Computer Science student 
                 at the University of Győr, and I want to get 
                 some experience working in the tech industry.</p>
-            <p>I started my programming journey back in 2018 
+            <p data-aos="fade-left">I started my programming journey back in 2018 
                 when I started learning Pascal at high school, 
                 and I fell in love with programming. Because of 
                 the fact, that Pascal is not the most modern 
@@ -43,14 +44,14 @@
                 learning it. I made some projects with Python, 
                 mostly videogame remakes such as Pacman, Space 
                 Invaders, and Pong.</p>
-            <p>I love creating new things since my childhood, 
+            <p data-aos="fade-left">I love creating new things since my childhood, 
                 and I think I can express myself by designing 
                 and creating web pages. As a Front End Developer, 
                 I can combine my passion for programming and 
                 creating something beautiful.
             </p>
-            <img src="./images/me2.jpg" alt="picure of me smiling">
-            <a href="./index.html" class="accent-btn">Back</a>
+            <img data-aos="fade-left" src="./images/me2.jpg" alt="picure of me smiling">
+            <a data-aos="fade-left" href="./index.html" class="accent-btn">Back</a>
         </section>
     </main>
 
@@ -63,6 +64,10 @@
         </div>
         <p>Artúr Friedrich 2021</p>
     </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <script src="./index.js"></script>
 </body>
 </html>

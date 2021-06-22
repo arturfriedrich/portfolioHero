@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="./css/contact.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Artúr Friedrich</title>
@@ -27,7 +28,7 @@
         </div>
     </header>
     <main>
-        <section class="contact" id="contactSection">
+        <section class="contact" id="contactSection" data-aos="fade-left">
             <h3 class="section-title">Contact me</h3>
             <form method="post"class="input-fields">
                 <input type="text" name="name" class="contact-input name" placeholder="Name" required>
@@ -47,6 +48,10 @@
         </div>
         <p>Artúr Friedrich 2021</p>
     </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="./index.js"></script>
 </body>
