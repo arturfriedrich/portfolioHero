@@ -29,6 +29,8 @@ header {
     justify-content: space-between;
     width: 100%;
     position: fixed;
+    background-color: var(--blue);
+    opacity: .8;
 }
 
 .hamburger {
@@ -294,7 +296,6 @@ footer p {
 }
 
 footer img {
-    opacity: .8;
     width: 20px;
     margin: .25em;
 }
